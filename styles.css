@@ -83,8 +83,8 @@ header {
 .colors-container {
   width: 100%;
   display: grid;
-  grid-template-areas: "blue-green pink white"
-                       "purple lilac black";
+  grid-template-areas: "one two three"
+                       "four five six";
   grid-template-columns: repeat(3, 1fr);
 }
 
@@ -101,35 +101,35 @@ header {
 
 .blue-green {
   background-color: #85d2d0;
-  grid-area: blue-green;
+  grid-area: one;
 }
 
 .pink {
   background-color: #F4B9B8;
-  grid-area: pink;
+  grid-area: two;
 }
 
 .white {
   background-color: #FFF;
   border: 1px solid #EBEBEB;
-  grid-area: white;
+  grid-area: three;
 }
 
 .purple {
   background-color: #887bb0;
   color: #FFF;
-  grid-area: purple;
+  grid-area: four;
 }
 
 .lilac {
   background-color: #cd9fcc;
-  grid-area: lilac;
+  grid-area: five;
 }
 
 .black {
   background-color: #000;
   color: #FFF;
-  grid-area: black;
+  grid-area: six;
 }
 
 /* Fonts */
@@ -195,7 +195,6 @@ header {
   text-decoration: none;
   padding: 10px 20px;
   margin: 5px;
-  width: 10em;
   text-align: center;
   text-transform: uppercase;
   font-family: 'Inter', sans-serif;
