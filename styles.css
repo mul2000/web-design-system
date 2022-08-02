@@ -38,6 +38,10 @@ nav {
   position: fixed;
   top: 0;
   text-align: center;
+  display: grid;
+  grid-template: 50px / repeat(4, 1fr);
+  gap: 40px;
+  justify-items: center;
 }
 
 nav li {
@@ -82,6 +86,9 @@ header {
 /* Color blocks */
 .colors-container {
   width: 100%;
+  display: grid;
+  grid-template-areas: "blue-green pink white"
+                       "purple lilac black"
 }
 
 .color-panel {
@@ -97,29 +104,35 @@ header {
 
 .blue-green {
   background-color: #85d2d0;
+  grid-area: blue-green;
 }
 
 .pink {
   background-color: #F4B9B8;
+  grid-area: pink;
 }
 
 .white {
   background-color: #FFF;
   border: 1px solid #EBEBEB;
+  grid-area: white;
 }
 
 .purple {
   background-color: #887bb0;
   color: #FFF;
+  grid-area: purple;
 }
 
 .lilac {
   background-color: #cd9fcc;
+  grid-area: lilac;
 }
 
 .black {
   background-color: #000;
   color: #FFF;
+  grid-area: black;
 }
 
 /* Fonts */
@@ -191,6 +204,13 @@ header {
   font-family: 'Inter', sans-serif;
   color: #FFF;
   border: 1px solid;
+}
+
+.button-container {
+  display: grid;
+  grid-template: 1fr / repeat(4, 1fr);
+  gap: 40px;
+  justify-items: center;
 }
 
 .blue-green.btn:hover {
