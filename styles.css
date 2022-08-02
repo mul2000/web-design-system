@@ -85,13 +85,12 @@ header {
   display: grid;
   grid-template-areas: "blue-green pink white"
                        "purple lilac black"
-  
   grid-template-columns: repeat(3, 1fr);
 }
 
 .color-panel {
   display: inline-block;
-  width: 27%;
+  min-width: 27%;
   margin: 10px;
   text-align: center;
 }
