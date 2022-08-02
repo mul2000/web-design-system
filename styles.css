@@ -84,7 +84,7 @@ header {
   width: 100%;
   display: grid;
   grid-template-areas: "blue-green pink white"
-                       "purple lilac black"
+                       "purple lilac black";
   grid-template-columns: repeat(3, 1fr);
 }
 
