@@ -38,10 +38,6 @@ nav {
   position: fixed;
   top: 0;
   text-align: center;
-  display: grid;
-  grid-template: 50px / repeat(4, 1fr);
-  gap: 40px;
-  justify-items: center;
 }
 
 nav li {
@@ -89,6 +85,8 @@ header {
   display: grid;
   grid-template-areas: "blue-green pink white"
                        "purple lilac black"
+  
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .color-panel {
@@ -209,9 +207,13 @@ header {
 .button-container {
   display: grid;
   grid-template: 1fr / repeat(4, 1fr);
-  gap: 40px;
-  justify-items: center;
+  grid-template-areas: "a b c d";
+  gap: 10px;
 }
+
+.blue-green.btn {
+    grid-area: a;
+   }
 
 .blue-green.btn:hover {
   background-color: #FFF;
@@ -219,17 +221,29 @@ header {
   color: #85d2d0;
 }
 
+.pink.btn {
+    grid-area: b;
+  }
+
 .pink.btn:hover {
   background-color: #FFF;
   border: 1px solid #F4B9B8;
   color: #F4B9B8;
 }
 
+.purple.btn {
+    grid-area: c;
+  }
+
 .purple.btn:hover {
   background-color: #FFF;
   border: 1px solid #887bb0;
   color: #887bb0;
 }
+
+.lilac.btn {
+    grid-area: d;
+  }
 
 .lilac.btn:hover {
   background-color: #FFF;
